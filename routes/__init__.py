@@ -1,17 +1,17 @@
 from flask import Flask
 
 def create_app():
-    app = Flask(__name__)
+    # Initialize Flask app and specify the path to the templates folder
+    app = Flask(__name__, template_folder='../templates')
 
     # Configuration settings
     app.config['SECRET_KEY'] = 'SUPERSECRETKEY'  # Change this to a secure random key
 
-    # Import routes and authentication routes
-    from . import main_routes
-    from .auth_routes import auth_bp
+    # Import and register Blueprints
+    from .main_routes import main_routes
+    from .auth_routes import auth_routes
 
-    # Register Blueprints
-    app.register_blueprint(auth_bp, url_prefix='/auth')
-    app.register_blueprint(main_routes.main_bp)  # Register main routes blueprint
+    app.register_blueprint(main_routes)
+    app.register_blueprint(auth_routes)
 
     return app
