@@ -10,8 +10,10 @@ def create_app():
     # Import and register Blueprints
     from .main_routes import main_routes
     from .auth_routes import auth_routes
+    from .invoice_processing import invoice_processing
 
     app.register_blueprint(main_routes)
     app.register_blueprint(auth_routes)
+    app.register_blueprint(invoice_processing)
 
     return app
