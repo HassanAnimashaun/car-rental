@@ -1,7 +1,24 @@
-from routes import create_app  # Import the create_app function from the car_rental package
+from flask import Flask, render_template
 
-# Create the app instance using the factory function
-app = create_app()
+# Initialize Flask app and specify the path to the templates folder
+app = Flask(__name__)
+
+# Configuration settings
+app.config['SECRET_KEY'] = 'SUPERSECRETKEY'  # Change this to a secure random key
+
+# Routes
+@app.route("/index")
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/auth")
+def auth():
+    return render_template("auth.html")
+
+@app.route("/invoice")
+def invoice():
+    return render_template("invoice.html")
 
 # Check if the script is executed directly (i.e., not imported as a module)
 if __name__ == "__main__":
