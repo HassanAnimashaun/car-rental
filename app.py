@@ -10,15 +10,19 @@ app.config['SECRET_KEY'] = 'SUPERSECRETKEY'  # Change this to a secure random ke
 @app.route("/index")
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html",show_navbar=True)
 
 @app.route("/auth")
 def auth():
-    return render_template("auth.html")
+    return render_template("auth.html", show_navbar=False)
 
-@app.route("/invoice")
+@app.route("/account")
 def invoice():
-    return render_template("invoice.html")
+    return render_template("account.html",show_navbar=False)
+
+@app.route("/details")
+def details():
+    return render_template("vehicle_details.html",show_navbar=False)
 
 # Check if the script is executed directly (i.e., not imported as a module)
 if __name__ == "__main__":

@@ -1,8 +1,121 @@
 {% extends 'base.html' %}
-
 {% block title %}Home{% endblock %}
 
 {% block content %}
 <!-- Place HTML content here -->
+<section class="py-5">
+    <div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 style="font-size: 65px;text-align: center;font-weight: bold;">Available Vehicles</h2>
+            </div>
+        </div><div class="filter" style="margin-bottom: 15px;">
+<form>
+    <select>
+        <option value="">Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="truck">Truck</option>
+        <option value="cargo">Cargo Van</option>
+        <option value="other">Other</option>
+    </select>
+    <select>
+        <option value="">Make</option>
+        <option value="ACURA">ACURA</option>
+        <option value="ASTON MARTIN">ASTON MARTIN</option>
+        <option value="AUDI">AUDI</option>
+        <option value="BENTLEY">BENTLEY</option>
+        <option value="BMW">BMW</option>
+        <option value="BUICK">BUICK</option>
+        <option value="CADILLAC">CADILLAC</option>
+        <option value="CHEVROLET">CHEVROLET</option>
+        <option value="CHRYSLER">CHRYSLER</option>
+        <option value="DODGE">DODGE</option>
+        <option value="FERRARI">FERRARI</option>
+        <option value="FORD">FORD</option>
+        <option value="GMC">GMC</option>
+        <option value="HONDA">HONDA</option>
+        <option value="HUMMER">HUMMER</option>
+        <option value="HYUNDAI">HYUNDAI</option>
+        <option value="INFINITI">INFINITI</option>
+        <option value="ISUZU">ISUZU</option>
+        <option value="JAGUAR">JAGUAR</option>
+        <option value="JEEP">JEEP</option>
+        <option value="KIA">KIA</option>
+        <option value="LAMBORGHINI">LAMBORGHINI</option>
+        <option value="LAND ROVER">LAND ROVER</option>
+        <option value="LEXUS">LEXUS</option>
+        <option value="LINCOLN">LINCOLN</option>
+        <option value="LOTUS">LOTUS</option>
+        <option value="MASERATI">MASERATI</option>
+        <option value="MAYBACH">MAYBACH</option>
+        <option value="MAZDA">MAZDA</option>
+        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+        <option value="MERCURY">MERCURY</option>
+        <option value="MINI">MINI</option>
+        <option value="MITSUBISHI">MITSUBISHI</option>
+        <option value="NISSAN">NISSAN</option>
+        <option value="PONTIAC">PONTIAC</option>
+        <option value="PORSCHE">PORSCHE</option>
+        <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+        <option value="SAAB">SAAB</option>
+        <option value="SATURN">SATURN</option>
+        <option value="SUBARU">SUBARU</option>
+        <option value="SUZUKI">SUZUKI</option>
+        <option value="TOYOTA">TOYOTA</option>
+        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+        <option value="VOLVO">VOLVO</option>
+    </select>
+    <select>
+        <option value="">Drive Train</option>
+        <option value="fourWheel">4x4</option>
+        <option value="twoWheel">2x4</option>
+        <option value="allWheel">AWD</option>
+    </select>
+    <select>
+        <option value="">Transmission</option>
+        <option value="manual">Manual</option>
+        <option value="automatic">Automatic</option>
+    </select>
+    <select>
+        <option value="">Location</option>
+        <option value="location1">Location1</option>
+        <option value="location2">Location2</option>
+        <option value="location3">Location3</option>
+    </select>
+    <button class="btn btn-success" style="margin-bottom: 5px;">Apply</button>
+</form>
+</div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col">
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 400px;width: 400px !important;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                    <div class="py-4">
+                        <h4>0000 Make Model</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 400px;width: 400px !important;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                    <div class="py-4">
+                        <h4>0000 Make Model</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 400px;width: 400px !important;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                    <div class="py-4">
+                        <h4>0000 Make Model</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 400px;width: 400px !important;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                    <div class="py-4">
+                        <h4>0000 Make Model</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
