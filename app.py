@@ -17,7 +17,7 @@ def auth():
     return render_template("auth.html", show_navbar=False)
 
 @app.route("/account")
-def invoice():
+def account():
     return render_template("account.html",show_navbar=False)
 
 @app.route("/details")
